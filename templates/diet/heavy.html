@@ -1,0 +1,58 @@
+{% extends 'base.html'  %}
+
+{% block content %}
+<div class="container">
+    <h2>Carbohydrates Options: </h2><hr>
+
+<table style="width:100%" style="border: 1px solid black;">
+  <tr style="border: 1px solid black; text-align: center;  background-color: #4CAF50; color: white;">
+    <th style="border: 1px solid black; text-align: center;">Food</th>
+    <th style="border: 1px solid black; text-align: center;">Amount(in gms)</th>
+    <th style="border: 1px solid black; text-align: center;">Calories</th>
+  </tr>
+  <tr style="border: 1px solid black; padding: 15px; }">
+    <td style="border: 1px solid black; text-align: center;">
+        {% for l in list %}
+            <h3>{{l}}</h3>
+        {% endfor %}
+    </td>
+    <td style="border: 1px solid black; text-align: center;">
+        {% for l1 in list1 %}
+          <h3>{{l1}}</h3>
+        {% endfor %}
+    </td>
+    <td style="border: 1px solid black;text-align: center;">
+        {% for l2 in list2 %}
+            <h3>{{l2}}</h3>
+        {% endfor %}
+    </td>
+  </tr>
+</table><br>
+<hr><br>
+    <h2>Protein Options: </h2><hr>
+    <table style="width:100%" style="border: 1px solid black;">
+  <tr style="border: 1px solid black; text-align: center;  background-color: #4CAF50; color: white;">
+    <th style="border: 1px solid black;">Food</th>
+    <th style="border: 1px solid black;">Amount(in gms)</th>
+    <th style="border: 1px solid black;">Calories</th>
+  </tr>
+  <tr style="border: 1px solid black; text-align: center; padding: 15px;">
+    <td style="border: 1px solid black; ">
+        {% for l in p %}
+            <h3>{{l}}</h3>
+        {% endfor %}
+    </td>
+    <td style="border: 1px solid black;">
+        {% for l1 in s %}
+          <h3>{{l1}}</h3>
+        {% endfor %}
+    </td>
+    <td style="border: 1px solid black;">
+        {% for l2 in c %}
+            <h3>{{l2}}</h3>
+        {% endfor %}
+    </td>
+  </tr>
+</table>
+</div>
+{% endblock %}

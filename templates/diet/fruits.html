@@ -1,0 +1,31 @@
+{% extends 'base.html'  %}
+
+{% block content %}
+<div class="container">
+    <h2>Fruits Option : </h2><hr>
+<table style="width:100%" style="border: 1px solid black;">
+  <tr style="border: 1px solid black; background-color: #4CAF50; color: white;">
+    <th style="border: 1px solid black;">Fruits</th>
+    <th style="border: 1px solid black;">Amount</th>
+    <th style="border: 1px solid black;">Calories</th>
+  </tr>
+  <tr style="border: 1px solid black; padding: 15px; text-align: center;">
+    <td style="border: 1px solid black;">
+        {% for l in list %}
+            <h3>{{l}}</h3>
+        {% endfor %}
+    </td>
+    <td style="border: 1px solid black;">
+        {% for l1 in list1 %}
+          <h3>{{l1}}</h3>
+        {% endfor %}
+    </td>
+    <td style="border: 1px solid black;">
+        {% for l2 in list2 %}
+            <h3>{{l2}}</h3>
+        {% endfor %}
+    </td>
+  </tr>
+</table>
+</div>
+{% endblock %}

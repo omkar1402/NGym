@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\django\\learning_users\\templates\\basic_app"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {}
+}

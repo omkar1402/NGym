@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}My amazing blog{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h2 class="font-weight-light">Follow this workout for better results.</h2>
+
+  <div class="row">
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'workout/Chest.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Monday-Push</h5>
+          <p class="card-text"></p>
+          <a href="{% url "push" %}" class="btn btn-primary">See Exercices</a>
+        </div>
+      </div>      
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'workout/Back.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tuesday-Pull</h5>
+          <p class="card-text"></p>
+          <a href="{% url "pull" %}" class="btn btn-primary">See Exercices</a>
+        </div>
+      </div>      
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'workout/Legs.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Wednsday-Legs</h5>
+          <p class="card-text"></p>
+          <a href="{% url "legs" %}" class="btn btn-primary">See Exercices</a>
+        </div>
+      </div>      
+    </div>
+</div>
+</div>
+
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'workout/Tricep.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Thursday-Push</h5>
+          <p class="card-text"></p>
+          <a href="{% url "push" %}" class="btn btn-primary">see Exercices</a>
+        </div>
+      </div>      
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'workout/Bicep.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Friday-Pull</h5>
+          <p class="card-text"></p>
+          <a href="{% url "pull" %}" class="btn btn-primary">See Exercices</a>
+        </div>
+      </div>      
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'workout/Legs.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Saturday-Legs</h5>
+          <p class="card-text"></p>
+          <a href="{% url "pull" %}" class="btn btn-primary">See Exercices</a>
+        </div>
+      </div>      
+    </div>
+</div>
+</div>
+
+{% endblock %}
