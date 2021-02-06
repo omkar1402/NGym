@@ -97,8 +97,7 @@ scipy==1.5.2
 seaborn==0.10.1
 Send2Trash==1.5.0
 six==1.15.0
-soup==0.1.0
-soupsieve==2.0.1
+soupieve==2.0.1
 sqlparse==0.4.1
 terminado==0.8.3
 testpath==0.4.4
