@@ -20,4 +20,6 @@ from django.urls import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('NGym_app.urls'),name="NGym_app"),
+    
+    url(r'^static/(P<path>.*)$',serve,{'document_root':settings.STATIC_ROOT}),
 ]
