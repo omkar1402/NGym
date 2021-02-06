@@ -60,7 +60,6 @@ mysql==0.0.2
 mysql-client==0.0.1
 mysql-connector==2.2.9
 mysql-connector-python==8.0.22
-mysqlclient @ file:///C:/Users/Ashwini/Desktop/Python%20and%20Django/CODES/Projects/NGym/mysqlclient-1.4.6-cp36-cp36m-win32.whl
 nbconvert==5.6.1
 nbformat==5.0.7
 notebook==6.0.3
